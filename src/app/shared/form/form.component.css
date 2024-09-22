@@ -1,0 +1,70 @@
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+.search-wrapper {
+  width: 450px;
+  margin: 150px auto 50px auto;
+  border-radius: 40px;
+  background: transparent;
+  box-shadow: 0 4px 20px -2px #e9e9e9;
+}
+
+.search-wrapper input {
+  padding-left: 20px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font: bold 13px "lucida sans", "trebuchet MS", "Tahoma";
+  border: 0;
+  background: #fff;
+  border-radius: 40px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.search-wrapper input:focus {
+  outline: 0;
+  background: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8) inset;
+}
+
+.search-wrapper input::placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.search-wrapper button {
+  width: 100%;
+  height: 40px;
+  font: 13px/40px "lucida sans", "trebuchet MS", "Tahoma";
+  color: #fff;
+  background: #198cff;
+  border: 0;
+  border-radius: 40px;
+  cursor: pointer;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  display: block;
+  margin-top: 15px;
+}
+
+.search-wrapper button:hover {
+  background: #1a73e8;
+}
+
+.search-wrapper button:focus,
+.search-wrapper button:active {
+  background: #198cff;
+  outline: 0;
+}

@@ -1,0 +1,6 @@
+<app-form
+  [inputConfig]="inputConfig"
+  [buttonName]="'distinctUntilChanged'"
+  (userInputEmited)="getUserInput($event)"
+></app-form>
+<app-table [tableHeaders]="['Result']" [tableData]="tableData"></app-table>

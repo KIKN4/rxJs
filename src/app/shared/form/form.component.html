@@ -1,0 +1,13 @@
+<form class="search-wrapper cf" (ngSubmit)="onSubmit()">
+  <div *ngFor="let input of inputConfig; let i = index">
+    <input
+      [type]="input.type"
+      [(ngModel)]="userInputs[i]"
+      [name]="'input' + i"
+      [placeholder]="input.placeholder"
+      required
+      style="box-shadow: none; margin-bottom: 10px"
+    />
+  </div>
+  <button type="submit">{{ buttonName }}</button>
+</form>
