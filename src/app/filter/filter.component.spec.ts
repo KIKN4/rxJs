@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StartWithComponent } from './start-with.component';
+import { FilterComponent } from './filter.component';
 
-describe('StartWithComponent', () => {
-  let component: StartWithComponent;
-  let fixture: ComponentFixture<StartWithComponent>;
+describe('FilterComponent', () => {
+  let component: FilterComponent;
+  let fixture: ComponentFixture<FilterComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [StartWithComponent]
+      declarations: [FilterComponent]
     });
-    fixture = TestBed.createComponent(StartWithComponent);
+    fixture = TestBed.createComponent(FilterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

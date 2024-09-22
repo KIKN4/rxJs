@@ -1,6 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { catchError, debounceTime, of, Subject, switchMap } from 'rxjs';
+import {
+  catchError,
+  debounceTime,
+  finalize,
+  of,
+  Subject,
+  switchMap,
+} from 'rxjs';
 
 @Component({
   selector: 'app-catch-error',
@@ -23,8 +30,11 @@ export class CatchErrorComponent {
         switchMap(() =>
           this.http.get(this.apiUrl).pipe(
             catchError((error) => {
-              this.errorMessage = error.error.message || 'An error occurred';
+              this.errorMessage = error.error.message || 'ერრორრრრრ';
               return of([]);
+            }),
+            finalize(() => {
+              console.log('დასრულდა ძამია');
             })
           )
         )
